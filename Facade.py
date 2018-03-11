@@ -40,7 +40,7 @@ class FacadeLab(object):
         self.user = user
         self.course = course
         self.lab = lab
- 
+
     def can_be_started(self):
         if self.user.is_login() and self.course.can_be_learned() and self.lab.can_be_started():
             return True
